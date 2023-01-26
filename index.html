@@ -6,7 +6,7 @@
         <title>Dreamspace, una encuesta sobre el impacto generacional en la calidad de sueño de los jovenes adultos.</title>
         <meta name="description" content="Dreamspace, una compañia destinada a mejorar el sueño a toda costa, propone un estudio del impacto de las variables del entorno actual en el sueño de los jovenes adultos. Con el objetivo de poder mejorar la calidad de nuestros productos proponemos esta encuesta a la que cualquiera puede acceder.">
         <meta name="viewport" content="initial-scale=1">
-        
+
         <link rel="icon" href="./icon.png" type="image/png"/>
 
         <link rel="stylesheet" href="styles.css">
@@ -31,22 +31,25 @@
                 <fieldset class="form-fieldset">
                     <legend>Informacion personal:</legend>
                     
-                    <label id="name-label" for="name-label">Nombre:</label>
+                    <label id="name-label" for="name-label">Nombre completo</label>
                     <input  id="name" type="text" required placeholder="Inserte su nombre">
 
                     <label id="email-label" for="email-label">Correo electronico:</label>
                     <input id="email" type="email" required placeholder="Inserte su correo electronico">
                     
-                    <label id="number-label" for="number-label">Edad:</label>
+                    <label id="number-label" for="number-label">Indique su edad</label>
                     <input class="form-block-item" id="number" type="number" min="1" max="99" required placeholder="Inserte su Edad">
                     
-                    <label for="dropdown">Genero:</label>
-                    <select required name="gender" id="dropdown" form="surver-form">
-                        <option selected disabled value label="Seleccione una opcion."></option>
-                        <option value="Femenino" label="Femenino"></option>
-                        <option value="NoBinario" label="No binario"></option>
-                        <option value="Masculino" label="Masculino"></option>
-                    </select>
+                    <label for="dropdown">¿Cual es su genero?</label>
+                    <div class="select-content">
+                        <select required name="gender" id="dropdown" form="surver-form">
+                            <option selected disabled value label="Seleccione una opcion."></option>
+                            <option value="Femenino" label="Femenino"></option>
+                            <option value="NoBinario" label="No binario"></option>
+                            <option value="Masculino" label="Masculino"></option>
+                        </select>
+                        <i></i>
+                    </div>
 
                 </fieldset>
 
